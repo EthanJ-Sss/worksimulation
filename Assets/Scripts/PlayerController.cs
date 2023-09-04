@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
 
     bool CanMoveToDir(Vector2 dir)
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, 1.5f, detectLayer);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, 1.3f, detectLayer);
 
         if (!hit)
             return true;
